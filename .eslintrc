@@ -1,0 +1,11 @@
+{
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "extends": "eslint-config-adm-dev-kit",
+    "env": {
+        "node": true
+    }
+}
