@@ -1,0 +1,23 @@
+{
+  "name": "adm-dev-kit-init-project",
+  "version": "0.1.0",
+  "author": "Eduárd Pocstár <admdh.com@gmail.com>",
+  "description": "Init project for ADM DEV KIT - https://github.com/admdh/adm-dev-kit",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/admdh/adm-dev-kit"
+  },
+  "main": "index.js",
+  "bin": {
+    "adm": "./bin/adm-dev-kit.js"
+  },
+  "keywords": [
+    "adm-dev-kit"
+  ],
+  "dependencies": {
+    "fs-extra": "^0.30.0",
+    "inquirer": "^1.1.2",
+    "node-cmd": "^1.1.1"
+  }
+}
