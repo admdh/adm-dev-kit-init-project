@@ -209,6 +209,11 @@ const manualInitType = () => {
 		eslintFile(mainData.eslint);
 		stylelintFile(mainData.stylelint);
 		exampleComponent(mainData.srcFolder);
+
+		gulpfile();
+
+		console.log('\n\nProject is created!');
+		console.log('Don\'t forget to run: npm i, jspm i\n\n');
 	});
 }
 
@@ -407,10 +412,6 @@ if (!fs.existsSync(__dirname + 'package.json')) {
 			console.log('Don\'t forget to run: npm i, jspm i\n\n');
 		} else {
 			manualInitType();
-			gulpfile();
-
-			console.log('\n\nProject is created!');
-			console.log('Don\'t forget to run: npm i, jspm i\n\n');
 		}
 	})
 } else {
