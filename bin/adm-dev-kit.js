@@ -4,6 +4,10 @@
 const inquirer = require('inquirer');
 const fs = require('fs-extra');
 
+const tets = require('../test.js');
+
+tets();
+
 const mainData = {
 	name: 'adm-dev-kit',
 	version: '1.0.0',
