@@ -4,10 +4,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs-extra');
 
-const tets = require('../test.js');
-
-tets();
-
 const mainData = {
 	name: 'adm-dev-kit',
 	version: '1.0.0',
@@ -400,7 +396,7 @@ const exampleComponent = (src) => {
 	});
 }
 
-if (!fs.existsSync(__dirname + 'package.json')) {
+if (!fs.existsSync('package.json')) {
 	inquirer.prompt(initType).then((answers) => {
 		if (answers.init) {
 			packageJson(mainData);
