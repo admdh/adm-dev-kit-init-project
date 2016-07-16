@@ -28,6 +28,11 @@ npm i
 jspm i
 ```
 
+#### Run project
+```
+npm start
+```
+
 #### Default Project Structure
 ```
 src/
