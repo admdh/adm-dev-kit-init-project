@@ -21,7 +21,7 @@
   "eslint": "eslint-config-adm-dev-kit",
   "stylelint": "stylelint-config-adm-dev-kit",
   "dependencies": {
-    "adm-dev-kit": "^2.5.3"
+    "adm-dev-kit": "^2.5.4"
   },
   "jspm": {
     "directories": {
