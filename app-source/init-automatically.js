@@ -16,7 +16,7 @@ const hwCSS = require('./app-components/hello-world/hello-world-css');
 const log = require('./console-log');
 
 module.exports = () => {
-	fs.writeJson('./_test-package.json', mainConfig, (err) => {
+	fs.writeJson('./package.json', mainConfig, (err) => {
 		if (err) throw err;
 	});
 
@@ -24,8 +24,8 @@ module.exports = () => {
 	serverFolders(mainConfig.viewsFolder);
 	serverFile(mainConfig.main);
 	gulpFile();
-	lintFile('.test-eslintrc', mainConfig.eslint);
-	lintFile('.test-stylelintrc', mainConfig.stylelint);
+	lintFile('.eslintrc', mainConfig.eslint);
+	lintFile('.stylelintrc', mainConfig.stylelint);
 
 	componentFolder(mainConfig.srcFolder);
 	mainLayout(mainConfig.srcFolder);

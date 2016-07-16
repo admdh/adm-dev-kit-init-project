@@ -39,7 +39,7 @@ module.exports = () => {
 		newConfig.eslint = answers.eslint;
 		newConfig.stylelint = answers.stylelint;
 
-		fs.writeJson('./_test-package.json', newConfig, (err) => {
+		fs.writeJson('./package.json', newConfig, (err) => {
 			if (err) throw err;
 		});
 
@@ -47,8 +47,8 @@ module.exports = () => {
 		serverFolders(newConfig.viewsFolder);
 		serverFile(newConfig.main);
 		gulpFile();
-		lintFile('.test-eslintrc', newConfig.eslint);
-		lintFile('.test-stylelintrc', newConfig.stylelint);
+		lintFile('.eslintrc', newConfig.eslint);
+		lintFile('.stylelintrc', newConfig.stylelint);
 
 		componentFolder(newConfig.srcFolder);
 		mainLayout(newConfig.srcFolder);
