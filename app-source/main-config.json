@@ -1,0 +1,39 @@
+ {
+  "name": "adm-dev-kit",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "repository": "",
+  "license": "MIT",
+  "main": "server.js",
+  "scripts": {
+    "run": "node server.js",
+    "build": "gulp",
+    "lint": "gulp lint"
+  },
+  "precommit": "lint",
+  "srcFolder": "./src",
+  "viewsFolder": "./views",
+  "buildFolder": "./dest",
+  "host": "localhost",
+  "port": "3000",
+  "cssVariables": "./src/_css-variables.css",
+  "eslint": "eslint-config-adm-dev-kit",
+  "stylelint": "stylelint-config-adm-dev-kit",
+  "dependencies": {
+    "adm-dev-kit": "^2.5.3"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "./src",
+      "packages": "./src/__jspm_packages"
+    },
+    "configFile": "./src/_jspm-config.js",
+    "dependencies": {},
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}

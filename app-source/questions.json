@@ -1,0 +1,106 @@
+{
+  "initType" : [{
+    "type": "confirm",
+    "name": "init",
+    "message": "Init project automaticaly:",
+    "default": true
+  }],
+  "mainQuestions" : [{
+      "type": "input",
+      "name": "name",
+      "message": "Name:",
+      "default": "adm-dev-kit"
+    },
+    {
+      "type": "input",
+      "name": "version",
+      "message": "Version:",
+      "default": "1.0.0"
+    },
+    {
+      "type": "input",
+      "name": "repository",
+      "message": "Repository URL:"
+    },
+    {
+      "type": "input",
+      "name": "author",
+      "message": "Author:"
+    },
+    {
+      "type": "input",
+      "name": "license",
+      "message": "License:",
+      "default": "MIT"
+    },
+    {
+      "type": "input",
+      "name": "description",
+      "message": "Description:"
+    },
+    {
+      "type": "input",
+      "name": "keywords",
+      "message": "Keywords:"
+    },
+    {
+      "type": "input",
+      "name": "entryPoint",
+      "message": "Entry Point:",
+      "default": "server.js"
+    },
+    {
+      "type": "input",
+      "name": "srcFolder",
+      "message": "Source Folder:",
+      "default": "./src"
+    },
+    {
+      "type": "input",
+      "name": "viewsFolder",
+      "message": "Views Folder:",
+      "default": "./views"
+    },
+    {
+      "type": "input",
+      "name": "buildFolder",
+      "message": "Build Folder:",
+      "default": "./dest"
+    },
+    {
+      "type": "input",
+      "name": "host",
+      "message": "Host:",
+      "default": "localhost"
+    },
+    {
+      "type": "input",
+      "name": "port",
+      "message": "Server Port:",
+      "default": "3000"
+    },
+    {
+      "type": "input",
+      "name": "cssVars",
+      "message": "CSS Variables File:",
+      "default": "./src/_css-variables.css"
+    },
+    {
+      "type": "confirm",
+      "name": "precommit",
+      "message": "Enable Precommit Lint:",
+      "default": true
+    },
+    {
+      "type": "input",
+      "name": "eslint",
+      "message": "Prefered Eslint:",
+      "default": "eslint-config-adm-dev-kit"
+    },
+    {
+      "type": "input",
+      "name": "stylelint",
+      "message": "Prefered Stylelint:",
+      "default": "stylelint-config-adm-dev-kit"
+    }]
+}
