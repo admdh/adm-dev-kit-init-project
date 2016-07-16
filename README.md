@@ -7,6 +7,11 @@ ADM DEV KIT INIT PROJECT is a small command line tool that focused to help initi
 It will generate all necessary files and dependencies required to run [ADM DEV KIT](https://github.com/admdh/adm-dev-kit).  
 New project can be initialized automatically and manual.
 
+#### Requirements
+```
+node.js 6.0.0 or later 
+```
+
 #### Installation
 Install ADM DEV KIT INIT PROJECT globaly:
 ```
