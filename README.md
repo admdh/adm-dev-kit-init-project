@@ -22,6 +22,11 @@ Navigate to empty project's folder and run:
 ```
 adm
 ```
+##### Automatically
+![ADM DEV KIT INIT AUTOMATICALLY](images/adm-dev-kit-auto-project-init.gif?raw=true "Init Atomatically")
+
+##### Manual
+
 #### Install npm and jspm packages
 ```
 npm i
