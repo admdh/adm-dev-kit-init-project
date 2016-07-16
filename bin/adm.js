@@ -16,6 +16,8 @@ if (!fs.existsSync('package.json')) {
 		}
 	});
 } else {
+	console.log('\n---------------------------------------------------------');
 	console.log('Looks like package.json already exists!\n' +
 		'Remove package.json or try in empty folder!');
+	console.log('---------------------------------------------------------\n');
 }
