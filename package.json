@@ -24,7 +24,7 @@
     "babel-eslint": "^6.1.2",
     "eslint": "^3.0.1",
     "eslint-config-adm-dev-kit": "^1.0.1"
-  }
+  },
   "engines" : {
     "node" : ">=6.0.0"
   }
