@@ -26,6 +26,7 @@ adm
 ![ADM DEV KIT INIT AUTOMATICALLY](images/adm-dev-kit-auto-project-init.gif?raw=true "Init Atomatically")
 
 ##### Manual
+![ADM DEV KIT INIT AUTOMATICALLY](images/adm-dev-kit-manual-project-init.gif?raw=true "Init Manually")
 
 #### Install npm and jspm packages
 ```
