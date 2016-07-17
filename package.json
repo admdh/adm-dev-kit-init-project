@@ -1,6 +1,6 @@
 {
   "name": "adm-dev-kit-init-project",
-  "version": "0.2.12",
+  "version": "0.2.3",
   "author": "Eduárd Pocstár <admdh.com@gmail.com>",
   "description": "Init project for ADM DEV KIT - https://github.com/admdh/adm-dev-kit",
   "license": "MIT",
@@ -18,14 +18,15 @@
   "dependencies": {
     "fs-extra": "^0.30.0",
     "inquirer": "^1.1.2",
-    "node-cmd": "^1.1.1"
+    "node-cmd": "^1.1.1",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "babel-eslint": "^6.1.2",
     "eslint": "^3.0.1",
     "eslint-config-adm-dev-kit": "^1.0.1"
   },
-  "engines" : {
-    "node" : ">=6.0.0"
+  "engines": {
+    "node": ">=6.0.0"
   }
 }
