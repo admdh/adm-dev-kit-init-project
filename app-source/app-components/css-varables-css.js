@@ -25,6 +25,18 @@ module.exports = (source) => {
 		'\t--table-row-even-color : #f6f6f6;\n' +
 		'\t--table-row-odd-color : #fff;\n' +
 		'}\n' +
+		'@custom-media --small (width >= 479px);' +
+		'@custom-media --small-down (width <= 479px);' +
+		'@custom-media --small-only (width <= 479px);' +
+		'@custom-media --medium (width >= 480px);' +
+		'@custom-media --medium-down (width <= 959px);' +
+		'@custom-media --medium-only (width >= 960px and width <= 1439px);' +
+		'@custom-media --large (width >= 960px);' +
+		'@custom-media --large-down (width <= 1439px);' +
+		'@custom-media --large-only (max-width: 30em);' +
+		'@custom-media --xlarge (width >= 1440px);' +
+		'@custom-media --xlarge-down (width <= 1919px);' +
+		'@custom-media --xlarge-only (width >= 1440px and width <= 1919px);' +
 		'/* stylelint-enable */';
 
 	fs.writeFile(source + '/_css-variables.css', fileContent, (err) => {
