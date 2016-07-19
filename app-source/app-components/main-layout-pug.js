@@ -6,9 +6,9 @@ module.exports = (source) => {
 		'\thead\n' +
 		'\t\tmeta(charset=\'UTF-8\')\n' +
 		'\t\tmeta(name=\'viewport\' content=\'width=device-width, ' +
-		'		initial-scale=1\')\n' +
+				'initial-scale=1\')\n' +
 		'\t\tlink(rel=\'shortcut icon\' type=\'image/x-icon\' ' +
-		'		href=\'/favicon.ico\')\n' +
+				'href=\'/favicon.ico\')\n' +
 		'\t\tblock title\n' +
 		'\t\t\ttitle Main Layout\n' +
 		'\t\t//build:css\n' +
