@@ -6,6 +6,7 @@ const mainConfig = require('./main-config.json');
 const serverFolders = require('./server-components/server-folders');
 const serverFile = require('./server-components/server-js');
 const gulpFile = require('./server-components/gulpfile-js');
+const editorconfig = require('./server-components/editorconfig');
 const lintFile = require('./server-components/lintrc');
 
 const componentFolder = require('./app-components/component-folder');
@@ -54,6 +55,7 @@ module.exports = () => {
 		serverFolders(newConfig.viewsFolder);
 		serverFile(newConfig.main);
 		gulpFile();
+		editorconfig();
 		lintFile('.eslintrc', newConfig.eslint);
 		lintFile('.stylelintrc', newConfig.stylelint);
 
