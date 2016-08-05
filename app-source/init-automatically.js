@@ -29,29 +29,29 @@ module.exports = () => {
 		if (err) throw err;
 	});
 
-	serverFolders(mainConfig.srcFolder);
-	serverFolders(mainConfig.viewsFolder);
+	serverFolders(mainConfig.adm.srcFolder);
+	serverFolders(mainConfig.adm.viewsFolder);
 	serverFile(mainConfig.main);
 	gulpFile();
 	editorconfig();
-	lintFile('.eslintrc', mainConfig.eslint);
-	lintFile('.stylelintrc', mainConfig.stylelint);
+	lintFile('.eslintrc', mainConfig.adm.eslint);
+	lintFile('.stylelintrc', mainConfig.adm.stylelint);
 
-	componentFolder(mainConfig.srcFolder);
-	mainLayout(mainConfig.srcFolder);
-	indexPug(mainConfig.srcFolder);
-	hwPUG(mainConfig.srcFolder);
+	componentFolder(mainConfig.adm.srcFolder);
+	mainLayout(mainConfig.adm.srcFolder);
+	indexPug(mainConfig.adm.srcFolder);
+	hwPUG(mainConfig.adm.srcFolder);
 
-	hwJS(mainConfig.srcFolder);
-	hwCSS(mainConfig.srcFolder);
+	hwJS(mainConfig.adm.srcFolder);
+	hwCSS(mainConfig.adm.srcFolder);
 
-	cssVariables(mainConfig.srcFolder);
-	resetCSS(mainConfig.srcFolder);
-	typeCSS(mainConfig.srcFolder);
-	formCSS(mainConfig.srcFolder);
-	tableCSS(mainConfig.srcFolder);
-	gridCSS(mainConfig.srcFolder);
-	panelCSS(mainConfig.srcFolder);
+	cssVariables(mainConfig.adm.srcFolder);
+	resetCSS(mainConfig.adm.srcFolder);
+	typeCSS(mainConfig.adm.srcFolder);
+	formCSS(mainConfig.adm.srcFolder);
+	tableCSS(mainConfig.adm.srcFolder);
+	gridCSS(mainConfig.adm.srcFolder);
+	panelCSS(mainConfig.adm.srcFolder);
 
 	log(mainConfig.name);
 };

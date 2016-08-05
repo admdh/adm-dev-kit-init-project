@@ -38,42 +38,42 @@ module.exports = () => {
 		newConfig.description = answers.description;
 		newConfig.repository = answers.repository;
 		newConfig.main = answers.entryPoint;
-		newConfig.srcFolder = answers.srcFolder;
-		newConfig.viewsFolder = answers.viewsFolder;
-		newConfig.buildFolder = answers.buildFolder;
-		newConfig.host = answers.host;
-		newConfig.port = answers.port;
-		newConfig.cssVariables = answers.cssVars;
-		newConfig.eslint = answers.eslint;
-		newConfig.stylelint = answers.stylelint;
+		newConfig.adm.srcFolder = answers.srcFolder;
+		newConfig.adm.viewsFolder = answers.viewsFolder;
+		newConfig.adm.buildFolder = answers.buildFolder;
+		newConfig.adm.host = answers.host;
+		newConfig.adm.port = answers.port;
+		newConfig.adm.cssVariables = answers.cssVars;
+		newConfig.adm.eslint = answers.eslint;
+		newConfig.adm.stylelint = answers.stylelint;
 
 		fs.writeJson('./package.json', newConfig, (err) => {
 			if (err) throw err;
 		});
 
-		serverFolders(newConfig.srcFolder);
-		serverFolders(newConfig.viewsFolder);
-		serverFile(newConfig.main);
+		serverFolders(newConfig.adm.srcFolder);
+		serverFolders(newConfig.adm.viewsFolder);
+		serverFile(newConfig.adm.main);
 		gulpFile();
 		editorconfig();
-		lintFile('.eslintrc', newConfig.eslint);
-		lintFile('.stylelintrc', newConfig.stylelint);
+		lintFile('.eslintrc', newConfig.adm.eslint);
+		lintFile('.stylelintrc', newConfig.adm.stylelint);
 
-		componentFolder(newConfig.srcFolder);
-		mainLayout(newConfig.srcFolder);
-		indexPug(newConfig.srcFolder);
+		componentFolder(newConfig.adm.srcFolder);
+		mainLayout(newConfig.adm.srcFolder);
+		indexPug(newConfig.adm.srcFolder);
 
-		hwPUG(newConfig.srcFolder);
-		hwJS(newConfig.srcFolder);
-		hwCSS(newConfig.srcFolder);
+		hwPUG(newConfig.adm.srcFolder);
+		hwJS(newConfig.adm.srcFolder);
+		hwCSS(newConfig.adm.srcFolder);
 
-		cssVariables(newConfig.srcFolder);
-		resetCSS(newConfig.srcFolder);
-		typeCSS(newConfig.srcFolder);
-		formCSS(newConfig.srcFolder);
-		tableCSS(newConfig.srcFolder);
-		gridCSS(newConfig.srcFolder);
-		panelCSS(newConfig.srcFolder);
+		cssVariables(newConfig.adm.srcFolder);
+		resetCSS(newConfig.adm.srcFolder);
+		typeCSS(newConfig.adm.srcFolder);
+		formCSS(newConfig.adm.srcFolder);
+		tableCSS(newConfig.adm.srcFolder);
+		gridCSS(newConfig.adm.srcFolder);
+		panelCSS(newConfig.adm.srcFolder);
 
 		log(newConfig.name);
 	});
