@@ -2,7 +2,7 @@
   "initType" : [{
     "type": "confirm",
     "name": "init",
-    "message": "Init project automaticaly:",
+    "message": "Init project automatically:",
     "default": true
   }],
   "mainQuestions" : [{

@@ -9,19 +9,22 @@
   "scripts": {
     "run": "node server.js",
     "build": "gulp",
-    "lint": "gulp lint"
+    "lint": "gulp lint",
+    "postinstall": "jspm i"
   },
   "precommit": "lint",
-  "srcFolder": "./src",
-  "viewsFolder": "./views",
-  "buildFolder": "./dest",
-  "host": "localhost",
-  "port": "3000",
-  "cssVariables": "./src/_css-variables.css",
-  "eslint": "eslint-config-adm-dev-kit",
-  "stylelint": "stylelint-config-adm-dev-kit",
   "dependencies": {
     "adm-dev-kit": "^2.5.4"
+  },
+  "adm": {
+    "srcFolder": "./src",
+    "viewsFolder": "./views",
+    "buildFolder": "./dest",
+    "host": "localhost",
+    "port": "3000",
+    "cssVariables": "./src/_css-variables.css",
+    "eslint": "eslint-config-adm-dev-kit",
+    "stylelint": "stylelint-config-adm-dev-kit"
   },
   "jspm": {
     "directories": {
