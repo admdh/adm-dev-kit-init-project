@@ -14,7 +14,7 @@
   },
   "precommit": "lint",
   "dependencies": {
-    "adm-dev-kit": "^2.5.3"
+    "adm-dev-kit": "^2.5.50"
   },
   "adm": {
     "srcFolder": "./src",
