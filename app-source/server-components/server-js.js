@@ -12,6 +12,7 @@ module.exports = (source) => {
 		'\tname: pjson.name,\n' +
 		'\tdesc: pjson.description,\n' +
 		'\tversion: pjson.version,\n' +
+		'\tbrowserSync: pjson.browserSync,\n' +
 		'\tcssVariables: pjson.adm.cssVariables\n' +
 		'});\n';
 

@@ -14,7 +14,7 @@
   },
   "precommit": "lint",
   "dependencies": {
-    "adm-dev-kit": "^2.5.2"
+    "adm-dev-kit": "^2.5.3"
   },
   "adm": {
     "srcFolder": "./src",
@@ -22,6 +22,7 @@
     "buildFolder": "./dest",
     "host": "localhost",
     "port": "3000",
+    "browserSync": true,
     "cssVariables": "./src/_css-variables.css",
     "eslint": "eslint-config-adm-dev-kit",
     "stylelint": "stylelint-config-adm-dev-kit"
