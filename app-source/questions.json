@@ -80,12 +80,6 @@
       "default": "3000"
     },
     {
-      "type": "confirm",
-      "name": "browserSync",
-      "message": "Enable Browser-Sync:",
-      "default": true
-    },
-    {
       "type": "input",
       "name": "cssVars",
       "message": "CSS Variables File:",

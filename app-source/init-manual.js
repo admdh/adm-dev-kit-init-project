@@ -43,7 +43,6 @@ module.exports = () => {
 		newConfig.adm.buildFolder = answers.buildFolder;
 		newConfig.adm.host = answers.host;
 		newConfig.adm.port = answers.port;
-		newConfig.adm.browserSync = answers.browserSync;
 		newConfig.adm.cssVariables = answers.cssVars;
 		newConfig.adm.eslint = answers.eslint;
 		newConfig.adm.stylelint = answers.stylelint;
